@@ -23,8 +23,6 @@ namespace prep.specs
     {
       Establish c = () =>
       {
-        //var comparer = fake.an<IComparer<int>>;
-        //var comparer = 1;
         var firstComparer = depends.on<IComparer<int>>();
         firstComparer.setup(x => x.Compare(2,3)).Return(-1);
         var secondComparer = depends.on<IComparer<int>>();
@@ -43,8 +41,6 @@ namespace prep.specs
     {
         Establish c = () =>
         {
-            //var comparer = fake.an<IComparer<int>>;
-            //var comparer = 1;
             var firstComparer = depends.on<IComparer<int>>();
             firstComparer.setup(x => x.Compare(2, 3)).Return(-1);
             var secondComparer = depends.on<IComparer<int>>();
@@ -63,8 +59,6 @@ namespace prep.specs
     {
         Establish c = () =>
         {
-            //var comparer = fake.an<IComparer<int>>;
-            //var comparer = 1;
             var firstComparer = depends.on<IComparer<int>>();
             firstComparer.setup(x => x.Compare(2, 3)).Return(-1);
             var secondComparer = depends.on<IComparer<int>>();
